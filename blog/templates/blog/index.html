@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">Our <span class="text-primary">Blog</span></h1>
+                <p class="lead fs-5">Insights, tips, and news from the world of digital marketing</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Content -->
+<div class="container my-7">
+    <div class="row">
+        <!-- Blog Posts -->
+        <div class="col-lg-8">
+            <div class="row g-5">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm hover-lift h-100 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="SEO Blog Post" style="height: 200px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-primary">SEO</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center text-muted mb-3">
+                                <i class="far fa-calendar me-2"></i>
+                                <small>January 15, 2025</small>
+                            </div>
+                            <h3 class="card-title fw-bold">The Future of SEO in 2025</h3>
+                            <p class="card-text">Discover the latest SEO trends and how they will impact your digital marketing strategy in 2025.</p>
+                            <a href="{% url 'post_detail' 1 %}" class="btn btn-link text-primary fw-bold p-0">
+                                Read More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm hover-lift h-100 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="PPC Blog Post" style="height: 200px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-success">PPC</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center text-muted mb-3">
+                                <i class="far fa-calendar me-2"></i>
+                                <small>January 10, 2025</small>
+                            </div>
+                            <h3 class="card-title fw-bold">Maximizing ROI with PPC Advertising</h3>
+                            <p class="card-text">Learn how to optimize your PPC campaigns for maximum return on investment and lower cost per acquisition.</p>
+                            <a href="{% url 'post_detail' 2 %}" class="btn btn-link text-success fw-bold p-0">
+                                Read More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm hover-lift h-100 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Content Marketing Blog Post" style="height: 200px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-info">Content Marketing</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center text-muted mb-3">
+                                <i class="far fa-calendar me-2"></i>
+                                <small>January 5, 2025</small>
+                            </div>
+                            <h3 class="card-title fw-bold">Building a Successful Content Marketing Strategy</h3>
+                            <p class="card-text">Explore the key components of an effective content marketing strategy that drives engagement and conversions.</p>
+                            <a href="{% url 'post_detail' 3 %}" class="btn btn-link text-info fw-bold p-0">
+                                Read More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 4 -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm hover-lift h-100 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Web Design Blog Post" style="height: 200px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-warning">Web Design</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center text-muted mb-3">
+                                <i class="far fa-calendar me-2"></i>
+                                <small>December 28, 2024</small>
+                            </div>
+                            <h3 class="card-title fw-bold">Mobile-First Design: Why It Matters</h3>
+                            <p class="card-text">Understand the importance of mobile-first design and how it impacts user experience and search rankings.</p>
+                            <a href="{% url 'post_detail' 4 %}" class="btn btn-link text-warning fw-bold p-0">
+                                Read More <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav aria-label="Blog pagination" class="mt-7">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link rounded-pill" href="#" tabindex="-1">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link rounded-pill" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+            <!-- Categories -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-header bg-white py-4 border-0">
+                    <h5 class="mb-0 fw-bold">Categories</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#" class="btn btn-outline-primary rounded-pill">SEO</a>
+                        <a href="#" class="btn btn-outline-success rounded-pill">PPC</a>
+                        <a href="#" class="btn btn-outline-info rounded-pill">Social Media</a>
+                        <a href="#" class="btn btn-outline-warning rounded-pill">Content Marketing</a>
+                        <a href="#" class="btn btn-outline-danger rounded-pill">Web Design</a>
+                        <a href="#" class="btn btn-outline-secondary rounded-pill">E-commerce</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Popular Posts -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white py-4 border-0">
+                    <h5 class="mb-0 fw-bold">Popular Posts</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex mb-4">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="Popular Post">
+                        <div class="ms-3">
+                            <h6 class="mb-1">10 SEO Tips for 2025</h6>
+                            <small class="text-muted">January 12, 2025</small>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="Popular Post">
+                        <div class="ms-3">
+                            <h6 class="mb-1">How to Write Compelling Ad Copy</h6>
+                            <small class="text-muted">January 8, 2025</small>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <img src="https://images.unsplash.com/photo-1574717024456-4444c0ad7830?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="Popular Post">
+                        <div class="ms-3">
+                            <h6 class="mb-1">The Power of Video Marketing</h6>
+                            <small class="text-muted">January 3, 2025</small>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="Popular Post">
+                        <div class="ms-3">
+                            <h6 class="mb-1">Building a Strong Brand Identity</h6>
+                            <small class="text-muted">December 30, 2024</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Stay Updated with Our Latest Insights</h2>
+                <p class="lead fs-5 mb-5">Subscribe to our newsletter for the latest digital marketing trends and tips.</p>
+                <div class="input-group mb-3 w-75 mx-auto">
+                    <input type="email" class="form-control form-control-lg rounded-start-pill" placeholder="Enter your email" aria-label="Email">
+                    <button class="btn btn-warning btn-lg rounded-end-pill px-4 fw-bold" type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

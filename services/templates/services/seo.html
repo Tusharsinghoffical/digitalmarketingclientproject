@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+
+{% block title %}SEO Services - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">SEO <span class="text-primary">Services</span></h1>
+                <p class="lead fs-5">Improve your website's visibility and rank higher in search results with our comprehensive SEO strategies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container my-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}" class="text-decoration-none">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">SEO</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- SEO Content -->
+<div class="container my-7">
+    <div class="row g-5">
+        <div class="col-lg-8">
+            <!-- What is SEO -->
+            <div class="glass-card p-5 mb-5">
+                <h2 class="fw-bold mb-4">What is <span class="text-primary">SEO</span>?</h2>
+                <p class="lead">Search Engine Optimization (SEO) is the process of improving your website to increase its visibility when people search for products or services related to your business in Google, Bing, and other search engines.</p>
+                
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Organic Visibility</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Long-term Growth</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Targeted Traffic</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Cost-Effective Marketing</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Our SEO Approach -->
+            <div class="mb-5">
+                <h2 class="fw-bold mb-4">Our <span class="text-primary">SEO Approach</span></h2>
+                <p>We follow a data-driven approach to SEO that focuses on:</p>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                        <i class="fas fa-key"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Keyword Research</h4>
+                                </div>
+                                <p class="mb-0">Identifying the most relevant and valuable keywords for your business to target high-intent searchers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">On-Page Optimization</h4>
+                                </div>
+                                <p class="mb-0">Optimizing your website's content, meta tags, and structure for both users and search engines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Technical SEO</h4>
+                                </div>
+                                <p class="mb-0">Ensuring your website is fast, mobile-friendly, secure, and easily crawlable by search engines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Link Building</h4>
+                                </div>
+                                <p class="mb-0">Acquiring high-quality backlinks from authoritative sites to boost your domain authority.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefits -->
+            <div class="glass-card p-5">
+                <h2 class="fw-bold mb-4">Benefits of Our <span class="text-primary">SEO Services</span></h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Increased Organic Traffic</h5>
+                                <p class="mb-0">Attract more qualified visitors to your website through improved search rankings.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Higher Search Rankings</h5>
+                                <p class="mb-0">Achieve better visibility for your target keywords and phrases.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Improved User Experience</h5>
+                                <p class="mb-0">Create a better website experience that keeps visitors engaged.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Enhanced Brand Visibility</h5>
+                                <p class="mb-0">Increase awareness of your brand through consistent search presence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Cost-Effective Marketing</h5>
+                                <p class="mb-0">Generate long-term results without ongoing ad spend.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Long-Term Results</h5>
+                                <p class="mb-0">Build sustainable growth that compounds over time.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Better Conversion Rates</h5>
+                                <p class="mb-0">Attract visitors who are actively searching for your products/services.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Competitive Advantage</h5>
+                                <p class="mb-0">Outrank competitors and capture market share.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <!-- SEO Packages -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-header bg-primary text-white py-4">
+                    <h3 class="mb-0 fw-bold">SEO Packages</h3>
+                </div>
+                <div class="card-body p-4">
+                    <p>Choose the perfect SEO package for your business:</p>
+                    <a href="{% url 'packages' %}" class="btn btn-primary w-100 py-3 fw-bold">
+                        <i class="fas fa-box-open me-2"></i>View Packages
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Contact Us -->
+            <div class="glass-card p-4 mb-5">
+                <h3 class="fw-bold mb-3">Contact <span class="text-primary">Us</span></h3>
+                <p>Ready to improve your search rankings? Get in touch with our SEO experts today.</p>
+                <a href="{% url 'contact' %}" class="btn btn-success w-100 py-3 fw-bold">
+                    <i class="fas fa-calendar-check me-2"></i>Get Started
+                </a>
+            </div>
+            
+            <!-- SEO Stats -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold mb-4">Why SEO Matters</h4>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-primary">93%</div>
+                            <p class="mb-0">of online experiences begin with a search engine</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-success">75%</div>
+                            <p class="mb-0">of users never scroll past the first page of results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Ready to Dominate Search Rankings?</h2>
+                <p class="lead fs-5 mb-5">Let's discuss how our SEO services can boost your online visibility.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-rocket me-2"></i>Schedule a Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

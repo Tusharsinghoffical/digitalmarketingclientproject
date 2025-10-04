@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog Post - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'blog' %}">Blog</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Post Detail</li>
+        </ol>
+    </nav>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <article>
+                <h1>The Future of SEO in 2025</h1>
+                <p class="text-muted">Published on January 15, 2025 by Admin</p>
+                
+                <img src="https://via.placeholder.com/800x400" alt="SEO 2025" class="img-fluid rounded mb-4">
+                
+                <p>As we move further into 2025, the landscape of search engine optimization continues to evolve at a rapid pace. With Google's increasing focus on user experience and AI-powered algorithms, SEO professionals must adapt their strategies to stay ahead of the curve.</p>
+                
+                <h2>Key Trends Shaping SEO in 2025</h2>
+                
+                <h3>1. AI-Generated Content and Quality</h3>
+                <p>Google's algorithms have become increasingly sophisticated in detecting AI-generated content that lacks genuine value. In 2025, the focus is shifting toward content that demonstrates expertise, authoritativeness, and trustworthiness (E-A-T). Publishers who invest in high-quality, original content created by human experts are seeing better rankings.</p>
+                
+                <h3>2. Core Web Vitals and User Experience</h3>
+                <p>User experience signals continue to play a crucial role in search rankings. Core Web Vitals, which measure loading performance, interactivity, and visual stability, remain important factors. Websites that prioritize fast loading times, mobile responsiveness, and intuitive navigation are rewarded with higher positions in search results.</p>
+                
+                <h3>3. Voice Search Optimization</h3>
+                <p>With the proliferation of smart speakers and voice assistants, voice search optimization has become essential. In 2025, we're seeing a shift toward more conversational, long-tail keywords that mirror natural speech patterns. Structured data markup is also becoming increasingly important for voice search visibility.</p>
+                
+                <h3>4. Video and Visual Search</h3>
+                <p>Visual content is playing an increasingly important role in search. Google's improved image recognition capabilities and the rise of visual search platforms mean that optimizing images, videos, and other visual content is more important than ever. This includes proper alt text, descriptive filenames, and structured data.</p>
+                
+                <h2>Adapting Your SEO Strategy for 2025</h2>
+                <p>To succeed in 2025, businesses need to focus on creating valuable content that genuinely serves user needs, optimizing for voice and visual search, and ensuring their websites provide exceptional user experiences. The days of quick SEO fixes are over – sustainable success requires a comprehensive, user-centered approach.</p>
+                
+                <div class="mt-4">
+                    <h4>Share this post:</h4>
+                    <a href="#" class="btn btn-outline-primary">Facebook</a>
+                    <a href="#" class="btn btn-outline-info">Twitter</a>
+                    <a href="#" class="btn btn-outline-primary">LinkedIn</a>
+                </div>
+            </article>
+            
+            <div class="mt-5">
+                <h3>Comments</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">Great insights on the future of SEO! I'm particularly interested in how voice search is changing the game.</p>
+                        <p class="card-text"><small class="text-muted">January 16, 2025</small></p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Thanks for sharing these trends. It's clear that user experience will continue to be a major factor in SEO success.</p>
+                        <p class="card-text"><small class="text-muted">January 17, 2025</small></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Leave a Comment</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="comment" class="form-label">Comment</label>
+                                <textarea class="form-control" id="comment" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header">
+                    <h5>About the Author</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/60x60" alt="Author" class="rounded-circle me-3">
+                        <div>
+                            <h6 class="mb-0">Admin User</h6>
+                            <p class="mb-0 text-muted">SEO Specialist</p>
+                        </div>
+                    </div>
+                    <p class="mt-3">Digital marketing expert with over 10 years of experience in SEO and content strategy.</p>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h5>Related Posts</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Maximizing ROI with PPC Advertising</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Building a Successful Content Marketing Strategy</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Mobile-First Design: Why It Matters</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

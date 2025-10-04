@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Video Marketing - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Video Marketing</li>
+        </ol>
+    </nav>
+    
+    <div class="row">
+        <div class="col-12">
+            <h1>Video Marketing</h1>
+            <p class="lead">Engage your audience with compelling video content across platforms and drive meaningful results for your business.</p>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-lg-8">
+            <h2>Our Video Marketing Services</h2>
+            <p>Video content is one of the most powerful ways to connect with your audience. Our video marketing services help you create and distribute compelling content that drives engagement and conversions.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3>Video Production</h3>
+                    <p>From concept to completion, we create high-quality videos that tell your brand story and resonate with your audience.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>YouTube Marketing</h3>
+                    <p>Optimize your YouTube channel and videos to reach a wider audience and drive traffic to your website.</p>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3>Social Media Videos</h3>
+                    <p>Create engaging short-form videos optimized for Facebook, Instagram, TikTok, and other social platforms.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Video SEO</h3>
+                    <p>Optimize your video content to rank higher in search results and attract more views.</p>
+                </div>
+            </div>
+            
+            <h2 class="mt-4">Benefits of Video Marketing</h2>
+            <ul>
+                <li><strong>Higher Engagement:</strong> Video content generates more engagement than text or images alone</li>
+                <li><strong>Improved Conversion Rates:</strong> Including video on your landing pages can increase conversions by up to 80%</li>
+                <li><strong>Better SEO:</strong> Websites with video content are more likely to rank higher in search results</li>
+                <li><strong>Enhanced Brand Awareness:</strong> Video helps build stronger emotional connections with your audience</li>
+                <li><strong>Increased Social Shares:</strong> Video content is more likely to be shared across social media platforms</li>
+            </ul>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Video Marketing Packages</h3>
+                    <p>Choose the perfect video marketing package for your business:</p>
+                    <a href="{% url 'packages' %}" class="btn btn-primary w-100">View Packages</a>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm mt-4">
+                <div class="card-body">
+                    <h3 class="card-title">Contact Us</h3>
+                    <p>Ready to leverage the power of video marketing? Get in touch with our creative team today.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-success w-100">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

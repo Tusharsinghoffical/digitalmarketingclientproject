@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}PPC Advertising - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">PPC</li>
+        </ol>
+    </nav>
+    
+    <div class="row">
+        <div class="col-12">
+            <h1>PPC Advertising</h1>
+            <p class="lead">Drive targeted traffic to your website and generate leads with our expert PPC management services.</p>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-lg-8">
+            <h2>What is PPC?</h2>
+            <p>Pay-Per-Click (PPC) advertising is a digital marketing model where advertisers pay a fee each time one of their ads is clicked. It's essentially a way of buying visits to your site, rather than attempting to earn those visits organically.</p>
+            
+            <h2 class="mt-4">Our PPC Services</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Google Ads</h4>
+                    <p>Create and manage effective Google Ads campaigns to reach customers searching for your products or services.</p>
+                    
+                    <h4>Facebook & Instagram Ads</h4>
+                    <p>Leverage the power of social media advertising to target specific demographics and interests.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>LinkedIn Ads</h4>
+                    <p>Reach professionals and decision-makers with targeted LinkedIn advertising campaigns.</p>
+                    
+                    <h4>Conversion Optimization</h4>
+                    <p>Optimize your campaigns to maximize conversions and improve return on investment.</p>
+                </div>
+            </div>
+            
+            <h2 class="mt-4">Why Choose Our PPC Services?</h2>
+            <ul>
+                <li><strong>Expert Management:</strong> Our certified PPC specialists manage your campaigns for optimal performance</li>
+                <li><strong>Data-Driven Approach:</strong> We use analytics to make informed decisions and improve results</li>
+                <li><strong>Transparent Reporting:</strong> Get detailed reports on your campaign performance and ROI</li>
+                <li><strong>Continuous Optimization:</strong> We constantly refine your campaigns to improve performance</li>
+                <li><strong>Cost-Effective Solutions:</strong> Maximize your advertising budget with our efficient strategies</li>
+            </ul>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">PPC Packages</h3>
+                    <p>Choose the perfect PPC package for your business:</p>
+                    <a href="{% url 'packages' %}" class="btn btn-primary w-100">View Packages</a>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm mt-4">
+                <div class="card-body">
+                    <h3 class="card-title">Contact Us</h3>
+                    <p>Ready to launch your PPC campaigns? Get in touch with our advertising experts today.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-success w-100">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Digital Marketing Company{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="{% url 'home' %}">
+                <span class="me-2">Digital</span>
+                <span class="text-warning">Marketing</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2 position-relative">
+                        <a class="nav-link text-white fw-medium" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item mx-2 position-relative">
+                        <a class="nav-link text-white fw-medium" href="{% url 'services' %}">Services</a>
+                    </li>
+                    <li class="nav-item mx-2 position-relative">
+                        <a class="nav-link text-white fw-medium" href="{% url 'packages' %}">Packages</a>
+                    </li>
+                    <li class="nav-item mx-2 position-relative">
+                        <a class="nav-link text-white fw-medium" href="{% url 'blog' %}">Blog</a>
+                    </li>
+                    <li class="nav-item mx-2 position-relative">
+                        <a class="nav-link text-white fw-medium" href="{% url 'about' %}">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2 position-relative">
+                        <a class="nav-link text-white fw-medium" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="tel:+1234567890" class="btn btn-outline-light rounded-pill px-3 py-2 me-3 d-none d-lg-block">
+                        <i class="fas fa-phone me-2"></i>(123) 456-7890
+                    </a>
+                    <a href="{% url 'contact' %}" class="btn btn-warning rounded-pill px-4 py-2 fw-bold shadow-lg">
+                        <i class="fas fa-rocket me-2"></i>Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-warning">DigitalMarketing</h5>
+                    <p>Your trusted partner for all digital marketing needs. We help businesses grow through innovative digital strategies.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-warning">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'seo' %}" class="text-light text-decoration-none">SEO</a></li>
+                        <li><a href="{% url 'ppc' %}" class="text-light text-decoration-none">PPC</a></li>
+                        <li><a href="{% url 'website_development' %}" class="text-light text-decoration-none">Web Development</a></li>
+                        <li><a href="{% url 'apps' %}" class="text-light text-decoration-none">App Development</a></li>
+                        <li><a href="{% url 'video_marketing' %}" class="text-light text-decoration-none">Video Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-warning">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'home' %}" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="{% url 'services' %}" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="{% url 'packages' %}" class="text-light text-decoration-none">Packages</a></li>
+                        <li><a href="{% url 'blog' %}" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="{% url 'about' %}" class="text-light text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase text-warning">Contact Info</h5>
+                    <address class="text-light">
+                        <strong>DigitalMarketing</strong><br>
+                        123 Business Street<br>
+                        City, State 12345<br>
+                        <br>
+                        <i class="fas fa-envelope me-2"></i> info@digitalmarketing.com<br>
+                        <i class="fas fa-phone me-2"></i> (123) 456-7890<br>
+                        <i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM
+                    </address>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="row mt-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 DigitalMarketing. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Add active class to current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const currentPath = window.location.pathname;
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

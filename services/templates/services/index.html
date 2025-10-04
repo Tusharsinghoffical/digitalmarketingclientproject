@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+
+{% block title %}Services - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">Our <span class="text-primary">Services</span></h1>
+                <p class="lead fs-5">Comprehensive digital marketing solutions tailored to your business needs</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services Overview -->
+<div class="container my-7">
+    <div class="row g-5">
+        <!-- SEO Services -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body p-4">
+                    <div class="icon-xl bg-primary bg-opacity-10 text-primary rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-search fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold text-center">SEO Services</h3>
+                    <p class="card-text text-center mb-4">Improve your website's visibility in search engines and attract organic traffic.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Keyword Research</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>On-Page Optimization</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Link Building</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Technical SEO</span>
+                        </li>
+                    </ul>
+                    <a href="{% url 'seo' %}" class="btn btn-primary w-100 py-2 fw-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- PPC Advertising -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body p-4">
+                    <div class="icon-xl bg-success bg-opacity-10 text-success rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-ad fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold text-center">PPC Advertising</h3>
+                    <p class="card-text text-center mb-4">Drive targeted traffic to your website with paid advertising campaigns.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Google Ads</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Facebook Ads</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>LinkedIn Ads</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Conversion Optimization</span>
+                        </li>
+                    </ul>
+                    <a href="{% url 'ppc' %}" class="btn btn-success w-100 py-2 fw-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Website Development -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body p-4">
+                    <div class="icon-xl bg-info bg-opacity-10 text-info rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-laptop-code fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold text-center">Website Development</h3>
+                    <p class="card-text text-center mb-4">Create stunning, responsive websites that convert visitors into customers.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Custom Web Design</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>WordPress Development</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>E-commerce Solutions</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Mobile Optimization</span>
+                        </li>
+                    </ul>
+                    <a href="{% url 'website_development' %}" class="btn btn-info w-100 py-2 fw-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- App Development -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body p-4">
+                    <div class="icon-xl bg-warning bg-opacity-10 text-warning rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-mobile-alt fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold text-center">App Development</h3>
+                    <p class="card-text text-center mb-4">Build powerful mobile applications for iOS and Android platforms.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>iOS App Development</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Android App Development</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Cross-Platform Apps</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>App Store Optimization</span>
+                        </li>
+                    </ul>
+                    <a href="{% url 'apps' %}" class="btn btn-warning w-100 py-2 fw-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video Marketing -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body p-4">
+                    <div class="icon-xl bg-danger bg-opacity-10 text-danger rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-video fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold text-center">Video Marketing</h3>
+                    <p class="card-text text-center mb-4">Engage your audience with compelling video content across platforms.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Video Production</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>YouTube Marketing</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Social Media Videos</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Video SEO</span>
+                        </li>
+                    </ul>
+                    <a href="{% url 'video_marketing' %}" class="btn btn-danger w-100 py-2 fw-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Media Marketing -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body p-4">
+                    <div class="icon-xl bg-purple bg-opacity-10 text-purple rounded-circle mb-4 mx-auto">
+                        <i class="fab fa-facebook fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold text-center">Social Media Marketing</h3>
+                    <p class="card-text text-center mb-4">Build your brand presence and connect with your audience on social platforms.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Strategy Development</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Content Creation</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Community Management</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Paid Social Advertising</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-purple w-100 py-2 fw-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Digital Presence?</h2>
+                <p class="lead fs-5 mb-5">Let's discuss how our services can help achieve your business goals.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-calendar-check me-2"></i>Schedule a Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

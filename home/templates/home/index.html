@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section position-relative overflow-hidden">
+    <div class="container py-5 py-lg-7 position-relative z-index-1">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown">
+                    Grow Your Business with <span class="text-warning">Digital Marketing</span>
+                </h1>
+                <p class="lead fs-4 mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                    We help businesses reach their target audience and achieve measurable results through data-driven strategies.
+                </p>
+                <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="{% url 'contact' %}" class="btn btn-warning btn-lg px-5 py-3 fw-bold me-3 shadow-lg">
+                        <i class="fas fa-rocket me-2"></i>Get Started
+                    </a>
+                    <a href="{% url 'services' %}" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold shadow">
+                        <i class="fas fa-arrow-right me-2"></i>Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Decorative elements -->
+    <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+</div>
+
+<!-- Services Overview -->
+<div class="container my-7">
+    <div class="row">
+        <div class="col-12 text-center mb-6">
+            <h2 class="display-5 fw-bold mb-3">Our <span class="text-primary">Services</span></h2>
+            <p class="text-muted fs-5">Comprehensive digital marketing solutions for your business</p>
+        </div>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body text-center p-4">
+                    <div class="icon-xl bg-primary bg-opacity-10 text-primary rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-search fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold">SEO</h3>
+                    <p class="card-text">Improve your website's visibility and rank higher in search results.</p>
+                    <a href="{% url 'seo' %}" class="btn btn-link text-primary fw-bold p-0">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body text-center p-4">
+                    <div class="icon-xl bg-success bg-opacity-10 text-success rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-ad fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold">PPC</h3>
+                    <p class="card-text">Drive targeted traffic to your website with paid advertising.</p>
+                    <a href="{% url 'ppc' %}" class="btn btn-link text-success fw-bold p-0">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body text-center p-4">
+                    <div class="icon-xl bg-info bg-opacity-10 text-info rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-laptop-code fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold">Website Development</h3>
+                    <p class="card-text">Create stunning, responsive websites that convert visitors into customers.</p>
+                    <a href="{% url 'website_development' %}" class="btn btn-link text-info fw-bold p-0">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row g-4 mt-2">
+        <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body text-center p-4">
+                    <div class="icon-xl bg-warning bg-opacity-10 text-warning rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-mobile-alt fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold">App Development</h3>
+                    <p class="card-text">Build powerful mobile applications for iOS and Android platforms.</p>
+                    <a href="{% url 'apps' %}" class="btn btn-link text-warning fw-bold p-0">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body text-center p-4">
+                    <div class="icon-xl bg-danger bg-opacity-10 text-danger rounded-circle mb-4 mx-auto">
+                        <i class="fas fa-video fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold">Video Marketing</h3>
+                    <p class="card-text">Engage your audience with compelling video content across platforms.</p>
+                    <a href="{% url 'video_marketing' %}" class="btn btn-link text-danger fw-bold p-0">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm hover-lift">
+                <div class="card-body text-center p-4">
+                    <div class="icon-xl bg-purple bg-opacity-10 text-purple rounded-circle mb-4 mx-auto">
+                        <i class="fab fa-facebook fs-1"></i>
+                    </div>
+                    <h3 class="card-title fw-bold">Social Media</h3>
+                    <p class="card-text">Build your brand presence and connect with your audience on social platforms.</p>
+                    <a href="#" class="btn btn-link text-purple fw-bold p-0">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Why Choose Us -->
+<div class="bg-light py-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-6">
+                <h2 class="display-5 fw-bold mb-3">Why <span class="text-primary">Choose Us</span></h2>
+                <p class="text-muted fs-5">We deliver results that matter for your business</p>
+            </div>
+        </div>
+        
+        <div class="row g-5">
+            <div class="col-md-4 text-center">
+                <div class="card border-0 bg-white shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-circle mb-4 mx-auto">
+                            <i class="fas fa-chart-line fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold">Data-Driven Approach</h4>
+                        <p class="mb-0">We use analytics and insights to make informed decisions that drive results.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 text-center">
+                <div class="card border-0 bg-white shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-4 mx-auto">
+                            <i class="fas fa-users fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold">Expert Team</h4>
+                        <p class="mb-0">Our team of specialists brings years of experience to every project.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 text-center">
+                <div class="card border-0 bg-white shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-lg bg-warning bg-opacity-10 text-warning rounded-circle mb-4 mx-auto">
+                            <i class="fas fa-trophy fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold">Measurable Results</h4>
+                        <p class="mb-0">We focus on delivering tangible outcomes that impact your bottom line.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Ready to Grow Your Business?</h2>
+                <p class="lead fs-5 mb-5">Let's work together to achieve your digital marketing goals.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-calendar-check me-2"></i>Schedule a Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

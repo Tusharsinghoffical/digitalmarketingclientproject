@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}Website Development - Digital Marketing Company{% endblock %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Website Development</li>
+        </ol>
+    </nav>
+    
+    <div class="row">
+        <div class="col-12">
+            <h1>Website Development</h1>
+            <p class="lead">Create stunning, responsive websites that convert visitors into customers with our expert development services.</p>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-lg-8">
+            <h2>Our Website Development Services</h2>
+            <p>We create custom websites that are not only visually appealing but also functional, user-friendly, and optimized for search engines.</p>
+            
+            <h3 class="mt-4">Custom Web Design</h3>
+            <p>Our designers create unique, responsive websites that reflect your brand identity and provide an exceptional user experience across all devices.</p>
+            
+            <h3>WordPress Development</h3>
+            <p>We specialize in creating powerful WordPress websites using Elementor and other premium tools to give you a site that's both beautiful and easy to manage.</p>
+            
+            <h3>E-commerce Solutions</h3>
+            <p>Build a powerful online store with secure payment processing, inventory management, and seamless shopping experiences.</p>
+            
+            <h3>Mobile Optimization</h3>
+            <p>Ensure your website looks and functions perfectly on all mobile devices, providing an optimal viewing experience for your visitors.</p>
+            
+            <h2 class="mt-4">Our Development Process</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="p-3 bg-primary text-white rounded">
+                        <h5>1. Discovery</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-3 bg-secondary text-white rounded">
+                        <h5>2. Design</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-3 bg-secondary text-white rounded">
+                        <h5>3. Development</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-3 bg-secondary text-white rounded">
+                        <h5>4. Launch</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title">Website Packages</h3>
+                    <p>Choose the perfect website development package for your business:</p>
+                    <a href="{% url 'packages' %}" class="btn btn-primary w-100">View Packages</a>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm mt-4">
+                <div class="card-body">
+                    <h3 class="card-title">Contact Us</h3>
+                    <p>Ready to build your dream website? Get in touch with our development team today.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-success w-100">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: digitalmarketing
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn digitalmarketing.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.0

@@ -3,74 +3,268 @@
 {% block title %}Video Marketing - Digital Marketing Company{% endblock %}
 
 {% block content %}
-<div class="container mt-5 mb-5">
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">Video <span class="text-primary">Marketing</span></h1>
+                <p class="lead fs-5">Engage your audience with compelling video content across platforms and drive meaningful results for your business.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container my-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}" class="text-decoration-none">Services</a></li>
             <li class="breadcrumb-item active" aria-current="page">Video Marketing</li>
         </ol>
     </nav>
-    
-    <div class="row">
-        <div class="col-12">
-            <h1>Video Marketing</h1>
-            <p class="lead">Engage your audience with compelling video content across platforms and drive meaningful results for your business.</p>
-        </div>
-    </div>
-    
-    <div class="row mt-4">
+</div>
+
+<!-- Video Marketing Content -->
+<div class="container my-7">
+    <div class="row g-5">
         <div class="col-lg-8">
-            <h2>Our Video Marketing Services</h2>
-            <p>Video content is one of the most powerful ways to connect with your audience. Our video marketing services help you create and distribute compelling content that drives engagement and conversions.</p>
-            
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h3>Video Production</h3>
-                    <p>From concept to completion, we create high-quality videos that tell your brand story and resonate with your audience.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>YouTube Marketing</h3>
-                    <p>Optimize your YouTube channel and videos to reach a wider audience and drive traffic to your website.</p>
+            <!-- Our Video Marketing Services -->
+            <div class="glass-card p-5 mb-5">
+                <h2 class="fw-bold mb-4">Our Video <span class="text-primary">Marketing Services</span></h2>
+                <p class="lead">Video content is one of the most powerful ways to connect with your audience. Our video marketing services help you create and distribute compelling content that drives engagement and conversions.</p>
+                
+                <div class="row mt-5 g-4">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Video Production</h4>
+                                </div>
+                                <p class="mb-0">From concept to completion, we create high-quality videos that tell your brand story and resonate with your audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-danger bg-opacity-10 text-danger rounded-circle me-3">
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">YouTube Marketing</h4>
+                                </div>
+                                <p class="mb-0">Optimize your YouTube channel and videos to reach a wider audience and drive traffic to your website.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                        <i class="fas fa-hashtag"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Social Media Videos</h4>
+                                </div>
+                                <p class="mb-0">Create engaging short-form videos optimized for Facebook, Instagram, TikTok, and other social platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Video SEO</h4>
+                                </div>
+                                <p class="mb-0">Optimize your video content to rank higher in search results and attract more views.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h3>Social Media Videos</h3>
-                    <p>Create engaging short-form videos optimized for Facebook, Instagram, TikTok, and other social platforms.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Video SEO</h3>
-                    <p>Optimize your video content to rank higher in search results and attract more views.</p>
+            <!-- Video Production Process -->
+            <div class="mb-5">
+                <h2 class="fw-bold mb-4">Our <span class="text-primary">Production Process</span></h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-4">
+                                <i class="fas fa-lightbulb fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">1. Strategy</h5>
+                            <p class="mb-0">We define your video's goals, target audience, and key messages.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle mx-auto mb-4">
+                                <i class="fas fa-pencil-alt fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">2. Scripting</h5>
+                            <p class="mb-0">We create a compelling script and storyboard for your video.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mx-auto mb-4">
+                                <i class="fas fa-film fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">3. Production</h5>
+                            <p class="mb-0">We film and produce your video with professional equipment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-warning bg-opacity-10 text-warning rounded-circle mx-auto mb-4">
+                                <i class="fas fa-share-alt fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">4. Distribution</h5>
+                            <p class="mb-0">We optimize and distribute your video across platforms.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <h2 class="mt-4">Benefits of Video Marketing</h2>
-            <ul>
-                <li><strong>Higher Engagement:</strong> Video content generates more engagement than text or images alone</li>
-                <li><strong>Improved Conversion Rates:</strong> Including video on your landing pages can increase conversions by up to 80%</li>
-                <li><strong>Better SEO:</strong> Websites with video content are more likely to rank higher in search results</li>
-                <li><strong>Enhanced Brand Awareness:</strong> Video helps build stronger emotional connections with your audience</li>
-                <li><strong>Increased Social Shares:</strong> Video content is more likely to be shared across social media platforms</li>
-            </ul>
+            <!-- Benefits of Video Marketing -->
+            <div class="glass-card p-5">
+                <h2 class="fw-bold mb-4">Benefits of <span class="text-primary">Video Marketing</span></h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Higher Engagement</h5>
+                                <p class="mb-0">Video content generates more engagement than text or images alone.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Improved Conversion Rates</h5>
+                                <p class="mb-0">Including video on your landing pages can increase conversions by up to 80%.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Better SEO</h5>
+                                <p class="mb-0">Websites with video content are more likely to rank higher in search results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Enhanced Brand Awareness</h5>
+                                <p class="mb-0">Video helps build stronger emotional connections with your audience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Increased Social Shares</h5>
+                                <p class="mb-0">Video content is more likely to be shared across social media platforms.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Higher Retention</h5>
+                                <p class="mb-0">Viewers retain 95% of a message when they watch it in a video.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="col-lg-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h3 class="card-title">Video Marketing Packages</h3>
+            <!-- Video Marketing Packages -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-header bg-danger text-white py-4">
+                    <h3 class="mb-0 fw-bold">Video Marketing Packages</h3>
+                </div>
+                <div class="card-body p-4">
                     <p>Choose the perfect video marketing package for your business:</p>
-                    <a href="{% url 'packages' %}" class="btn btn-primary w-100">View Packages</a>
+                    <a href="{% url 'packages' %}" class="btn btn-danger w-100 py-3 fw-bold">
+                        <i class="fas fa-box-open me-2"></i>View Packages
+                    </a>
                 </div>
             </div>
             
-            <div class="card shadow-sm mt-4">
-                <div class="card-body">
-                    <h3 class="card-title">Contact Us</h3>
-                    <p>Ready to leverage the power of video marketing? Get in touch with our creative team today.</p>
-                    <a href="{% url 'contact' %}" class="btn btn-success w-100">Get Started</a>
+            <!-- Contact Us -->
+            <div class="glass-card p-4 mb-5">
+                <h3 class="fw-bold mb-3">Contact <span class="text-primary">Us</span></h3>
+                <p>Ready to leverage the power of video marketing? Get in touch with our creative team today.</p>
+                <a href="{% url 'contact' %}" class="btn btn-success w-100 py-3 fw-bold">
+                    <i class="fas fa-calendar-check me-2"></i>Get Started
+                </a>
+            </div>
+            
+            <!-- Video Stats -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold mb-4">Video Marketing Metrics</h4>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-primary">82%</div>
+                            <p class="mb-0">Of consumers want more brand video content</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-success">1200%</div>
+                            <p class="mb-0">Higher engagement on social media</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Ready to Create Compelling Video Content?</h2>
+                <p class="lead fs-5 mb-5">Let's discuss how video marketing can elevate your brand and drive results.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-rocket me-2"></i>Schedule a Consultation
+                </a>
             </div>
         </div>
     </div>

@@ -3,79 +3,253 @@
 {% block title %}Website Development - Digital Marketing Company{% endblock %}
 
 {% block content %}
-<div class="container mt-5 mb-5">
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">Website <span class="text-primary">Development</span></h1>
+                <p class="lead fs-5">Create stunning, responsive websites that convert visitors into customers with our expert development services.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container my-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}" class="text-decoration-none">Services</a></li>
             <li class="breadcrumb-item active" aria-current="page">Website Development</li>
         </ol>
     </nav>
-    
-    <div class="row">
-        <div class="col-12">
-            <h1>Website Development</h1>
-            <p class="lead">Create stunning, responsive websites that convert visitors into customers with our expert development services.</p>
-        </div>
-    </div>
-    
-    <div class="row mt-4">
+</div>
+
+<!-- Website Development Content -->
+<div class="container my-7">
+    <div class="row g-5">
         <div class="col-lg-8">
-            <h2>Our Website Development Services</h2>
-            <p>We create custom websites that are not only visually appealing but also functional, user-friendly, and optimized for search engines.</p>
-            
-            <h3 class="mt-4">Custom Web Design</h3>
-            <p>Our designers create unique, responsive websites that reflect your brand identity and provide an exceptional user experience across all devices.</p>
-            
-            <h3>WordPress Development</h3>
-            <p>We specialize in creating powerful WordPress websites using Elementor and other premium tools to give you a site that's both beautiful and easy to manage.</p>
-            
-            <h3>E-commerce Solutions</h3>
-            <p>Build a powerful online store with secure payment processing, inventory management, and seamless shopping experiences.</p>
-            
-            <h3>Mobile Optimization</h3>
-            <p>Ensure your website looks and functions perfectly on all mobile devices, providing an optimal viewing experience for your visitors.</p>
-            
-            <h2 class="mt-4">Our Development Process</h2>
-            <div class="row">
-                <div class="col-md-3 text-center">
-                    <div class="p-3 bg-primary text-white rounded">
-                        <h5>1. Discovery</h5>
+            <!-- Our Website Development Services -->
+            <div class="glass-card p-5 mb-5">
+                <h2 class="fw-bold mb-4">Our Website <span class="text-primary">Development Services</span></h2>
+                <p class="lead">We create custom websites that are not only visually appealing but also functional, user-friendly, and optimized for search engines.</p>
+                
+                <div class="row mt-5 g-4">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                        <i class="fas fa-pencil-ruler"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Custom Web Design</h4>
+                                </div>
+                                <p class="mb-0">Our designers create unique, responsive websites that reflect your brand identity and provide an exceptional user experience across all devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                        <i class="fab fa-wordpress"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">WordPress Development</h4>
+                                </div>
+                                <p class="mb-0">We specialize in creating powerful WordPress websites using Elementor and other premium tools to give you a site that's both beautiful and easy to manage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">E-commerce Solutions</h4>
+                                </div>
+                                <p class="mb-0">Build a powerful online store with secure payment processing, inventory management, and seamless shopping experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Mobile Optimization</h4>
+                                </div>
+                                <p class="mb-0">Ensure your website looks and functions perfectly on all mobile devices, providing an optimal viewing experience for your visitors.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
-                    <div class="p-3 bg-secondary text-white rounded">
-                        <h5>2. Design</h5>
+            </div>
+            
+            <!-- Our Development Process -->
+            <div class="mb-5">
+                <h2 class="fw-bold mb-4">Our <span class="text-primary">Development Process</span></h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-4">
+                                <i class="fas fa-search fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">1. Discovery</h5>
+                            <p class="mb-0">We start by understanding your business goals, target audience, and project requirements.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle mx-auto mb-4">
+                                <i class="fas fa-pencil-alt fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">2. Design</h5>
+                            <p class="mb-0">Our designers create wireframes and mockups to visualize your website's layout and user experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mx-auto mb-4">
+                                <i class="fas fa-code fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">3. Development</h5>
+                            <p class="mb-0">We build your website using the latest technologies and best practices for performance and security.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="glass-card p-4 h-100">
+                            <div class="icon-lg bg-warning bg-opacity-10 text-warning rounded-circle mx-auto mb-4">
+                                <i class="fas fa-rocket fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold">4. Launch</h5>
+                            <p class="mb-0">We thoroughly test your website and deploy it to a live server with ongoing support.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
-                    <div class="p-3 bg-secondary text-white rounded">
-                        <h5>3. Development</h5>
+            </div>
+            
+            <!-- Technologies We Use -->
+            <div class="glass-card p-5">
+                <h2 class="fw-bold mb-4">Technologies We <span class="text-primary">Use</span></h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">HTML5 & CSS3</h5>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="p-3 bg-secondary text-white rounded">
-                        <h5>4. Launch</h5>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">JavaScript</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">React</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">WordPress</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-sm bg-danger bg-opacity-10 text-danger rounded-circle me-3">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">PHP</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-sm bg-dark bg-opacity-10 text-dark rounded-circle me-3">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">MySQL</h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="col-lg-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h3 class="card-title">Website Packages</h3>
+            <!-- Website Packages -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-header bg-info text-white py-4">
+                    <h3 class="mb-0 fw-bold">Website Packages</h3>
+                </div>
+                <div class="card-body p-4">
                     <p>Choose the perfect website development package for your business:</p>
-                    <a href="{% url 'packages' %}" class="btn btn-primary w-100">View Packages</a>
+                    <a href="{% url 'packages' %}" class="btn btn-info w-100 py-3 fw-bold">
+                        <i class="fas fa-box-open me-2"></i>View Packages
+                    </a>
                 </div>
             </div>
             
-            <div class="card shadow-sm mt-4">
-                <div class="card-body">
-                    <h3 class="card-title">Contact Us</h3>
-                    <p>Ready to build your dream website? Get in touch with our development team today.</p>
-                    <a href="{% url 'contact' %}" class="btn btn-success w-100">Get Started</a>
+            <!-- Contact Us -->
+            <div class="glass-card p-4 mb-5">
+                <h3 class="fw-bold mb-3">Contact <span class="text-primary">Us</span></h3>
+                <p>Ready to build your dream website? Get in touch with our development team today.</p>
+                <a href="{% url 'contact' %}" class="btn btn-success w-100 py-3 fw-bold">
+                    <i class="fas fa-calendar-check me-2"></i>Get Started
+                </a>
+            </div>
+            
+            <!-- Website Stats -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold mb-4">Development Metrics</h4>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-primary">500+</div>
+                            <p class="mb-0">Websites Built</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-success">98%</div>
+                            <p class="mb-0">Client Satisfaction</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Ready to Build Your Dream Website?</h2>
+                <p class="lead fs-5 mb-5">Let's discuss how we can create a stunning website that drives results for your business.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-rocket me-2"></i>Schedule a Consultation
+                </a>
             </div>
         </div>
     </div>

@@ -3,74 +3,298 @@
 {% block title %}App Development - Digital Marketing Company{% endblock %}
 
 {% block content %}
-<div class="container mt-5 mb-5">
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">App <span class="text-primary">Development</span></h1>
+                <p class="lead fs-5">Build powerful mobile applications for iOS and Android platforms that engage users and drive business growth.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container my-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}" class="text-decoration-none">Services</a></li>
             <li class="breadcrumb-item active" aria-current="page">App Development</li>
         </ol>
     </nav>
-    
-    <div class="row">
-        <div class="col-12">
-            <h1>App Development</h1>
-            <p class="lead">Build powerful mobile applications for iOS and Android platforms that engage users and drive business growth.</p>
-        </div>
-    </div>
-    
-    <div class="row mt-4">
+</div>
+
+<!-- App Development Content -->
+<div class="container my-7">
+    <div class="row g-5">
         <div class="col-lg-8">
-            <h2>Our App Development Services</h2>
-            <p>We create innovative mobile applications that provide exceptional user experiences and help businesses connect with their customers on the go.</p>
-            
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h3>iOS App Development</h3>
-                    <p>Develop native iOS applications for iPhones and iPads that deliver seamless performance and intuitive user interfaces.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Android App Development</h3>
-                    <p>Create powerful Android applications that work flawlessly across a wide range of devices and screen sizes.</p>
+            <!-- Our App Development Services -->
+            <div class="glass-card p-5 mb-5">
+                <h2 class="fw-bold mb-4">Our App <span class="text-primary">Development Services</span></h2>
+                <p class="lead">We create innovative mobile applications that provide exceptional user experiences and help businesses connect with their customers on the go.</p>
+                
+                <div class="row mt-5 g-4">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                        <i class="fab fa-apple"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">iOS App Development</h4>
+                                </div>
+                                <p class="mb-0">Develop native iOS applications for iPhones and iPads that deliver seamless performance and intuitive user interfaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                        <i class="fab fa-android"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Android App Development</h4>
+                                </div>
+                                <p class="mb-0">Create powerful Android applications that work flawlessly across a wide range of devices and screen sizes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Cross-Platform Apps</h4>
+                                </div>
+                                <p class="mb-0">Build cost-effective applications that work on both iOS and Android platforms using modern frameworks like React Native.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">App Store Optimization</h4>
+                                </div>
+                                <p class="mb-0">Increase your app's visibility in app stores and attract more downloads through strategic optimization techniques.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <h3>Cross-Platform Apps</h3>
-                    <p>Build cost-effective applications that work on both iOS and Android platforms using modern frameworks like React Native.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>App Store Optimization</h3>
-                    <p>Increase your app's visibility in app stores and attract more downloads through strategic optimization techniques.</p>
+            <!-- Development Process -->
+            <div class="mb-5">
+                <h2 class="fw-bold mb-4">Our <span class="text-primary">Development Process</span></h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Ideation</h5>
+                            </div>
+                            <p class="mb-0">We work with you to define your app's purpose, features, and target audience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Design</h5>
+                            </div>
+                            <p class="mb-0">Our designers create intuitive user interfaces and engaging user experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Development</h5>
+                            </div>
+                            <p class="mb-0">We build your app using the latest technologies and best practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                    <i class="fas fa-vial"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Testing</h5>
+                            </div>
+                            <p class="mb-0">We thoroughly test your app across devices and platforms to ensure quality.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-sm bg-danger bg-opacity-10 text-danger rounded-circle me-3">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Launch</h5>
+                            </div>
+                            <p class="mb-0">We deploy your app to app stores and provide ongoing support.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-sm bg-dark bg-opacity-10 text-dark rounded-circle me-3">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Maintenance</h5>
+                            </div>
+                            <p class="mb-0">We provide updates, bug fixes, and new features post-launch.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <h2 class="mt-4">Why Choose Our App Development Services?</h2>
-            <ul>
-                <li><strong>Expert Team:</strong> Experienced developers with expertise in the latest technologies</li>
-                <li><strong>User-Centered Design:</strong> Focus on creating intuitive and engaging user experiences</li>
-                <li><strong>Agile Development:</strong> Iterative development process for faster delivery and flexibility</li>
-                <li><strong>Quality Assurance:</strong> Rigorous testing to ensure bug-free, high-performance applications</li>
-                <li><strong>Ongoing Support:</strong> Post-launch maintenance and updates to keep your app running smoothly</li>
-            </ul>
+            <!-- Why Choose Us -->
+            <div class="glass-card p-5">
+                <h2 class="fw-bold mb-4">Why Choose Our <span class="text-primary">App Development Services</span>?</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Expert Team</h5>
+                                <p class="mb-0">Experienced developers with expertise in the latest technologies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">User-Centered Design</h5>
+                                <p class="mb-0">Focus on creating intuitive and engaging user experiences.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Agile Development</h5>
+                                <p class="mb-0">Iterative development process for faster delivery and flexibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Quality Assurance</h5>
+                                <p class="mb-0">Rigorous testing to ensure bug-free, high-performance applications.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Ongoing Support</h5>
+                                <p class="mb-0">Post-launch maintenance and updates to keep your app running smoothly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Competitive Pricing</h5>
+                                <p class="mb-0">High-quality development services at affordable rates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="col-lg-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h3 class="card-title">App Development Packages</h3>
+            <!-- App Development Packages -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-header bg-warning text-dark py-4">
+                    <h3 class="mb-0 fw-bold">App Development Packages</h3>
+                </div>
+                <div class="card-body p-4">
                     <p>Choose the perfect app development package for your business:</p>
-                    <a href="{% url 'packages' %}" class="btn btn-primary w-100">View Packages</a>
+                    <a href="{% url 'packages' %}" class="btn btn-warning w-100 py-3 fw-bold">
+                        <i class="fas fa-box-open me-2"></i>View Packages
+                    </a>
                 </div>
             </div>
             
-            <div class="card shadow-sm mt-4">
-                <div class="card-body">
-                    <h3 class="card-title">Contact Us</h3>
-                    <p>Ready to build your mobile app? Get in touch with our development team today.</p>
-                    <a href="{% url 'contact' %}" class="btn btn-success w-100">Get Started</a>
+            <!-- Contact Us -->
+            <div class="glass-card p-4 mb-5">
+                <h3 class="fw-bold mb-3">Contact <span class="text-primary">Us</span></h3>
+                <p>Ready to build your mobile app? Get in touch with our development team today.</p>
+                <a href="{% url 'contact' %}" class="btn btn-success w-100 py-3 fw-bold">
+                    <i class="fas fa-calendar-check me-2"></i>Get Started
+                </a>
+            </div>
+            
+            <!-- App Stats -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold mb-4">App Development Metrics</h4>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-primary">200+</div>
+                            <p class="mb-0">Apps Developed</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-success">4.8</div>
+                            <p class="mb-0">Average Rating</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Ready to Launch Your Mobile App?</h2>
+                <p class="lead fs-5 mb-5">Let's discuss how we can create a powerful app that engages users and drives business growth.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-rocket me-2"></i>Schedule a Consultation
+                </a>
             </div>
         </div>
     </div>

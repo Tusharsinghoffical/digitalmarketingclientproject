@@ -3,118 +3,318 @@
 {% block title %}Blog Post - Digital Marketing Company{% endblock %}
 
 {% block content %}
-<div class="container mt-5 mb-5">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'blog' %}">Blog</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Post Detail</li>
-        </ol>
-    </nav>
-    
-    <div class="row">
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'blog' %}" class="text-decoration-none">Blog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Post Detail</li>
+                    </ol>
+                </nav>
+                <h1 class="display-4 fw-bold">
+                    {% if post_id == 1 %}
+                        The Future of <span class="text-primary">SEO</span> in 2025
+                    {% elif post_id == 2 %}
+                        Maximizing <span class="text-primary">ROI</span> with PPC Advertising
+                    {% elif post_id == 3 %}
+                        Building a Successful <span class="text-primary">Content Marketing</span> Strategy
+                    {% elif post_id == 4 %}
+                        <span class="text-primary">Mobile-First</span> Design: Why It Matters
+                    {% else %}
+                        Blog Post Title
+                    {% endif %}
+                </h1>
+                <p class="lead fs-5">
+                    {% if post_id == 1 %}
+                        Published on January 15, 2025 by Admin
+                    {% elif post_id == 2 %}
+                        Published on January 10, 2025 by Admin
+                    {% elif post_id == 3 %}
+                        Published on January 5, 2025 by Admin
+                    {% elif post_id == 4 %}
+                        Published on December 28, 2024 by Admin
+                    {% else %}
+                        Published on January 1, 2025 by Admin
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Post Content -->
+<div class="container my-7">
+    <div class="row g-5">
         <div class="col-lg-8">
-            <article>
-                <h1>The Future of SEO in 2025</h1>
-                <p class="text-muted">Published on January 15, 2025 by Admin</p>
+            <article class="glass-card p-5">
+                {% if post_id == 1 %}
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="SEO 2025" class="img-fluid rounded mb-5 w-100">
+                    
+                    <p class="lead mb-5">As we move further into 2025, the landscape of search engine optimization continues to evolve at a rapid pace. With Google's increasing focus on user experience and AI-powered algorithms, SEO professionals must adapt their strategies to stay ahead of the curve.</p>
+                    
+                    <h2 class="fw-bold mb-4">Key Trends Shaping <span class="text-primary">SEO</span> in 2025</h2>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">1. AI-Generated Content and Quality</h3>
+                        <p>Google's algorithms have become increasingly sophisticated in detecting AI-generated content that lacks genuine value. In 2025, the focus is shifting toward content that demonstrates expertise, authoritativeness, and trustworthiness (E-A-T). Publishers who invest in high-quality, original content created by human experts are seeing better rankings.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">2. Core Web Vitals and User Experience</h3>
+                        <p>User experience signals continue to play a crucial role in search rankings. Core Web Vitals, which measure loading performance, interactivity, and visual stability, remain important factors. Websites that prioritize fast loading times, mobile responsiveness, and intuitive navigation are rewarded with higher positions in search results.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">3. Voice Search Optimization</h3>
+                        <p>With the proliferation of smart speakers and voice assistants, voice search optimization has become essential. In 2025, we're seeing a shift toward more conversational, long-tail keywords that mirror natural speech patterns. Structured data markup is also becoming increasingly important for voice search visibility.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">4. Video and Visual Search</h3>
+                        <p>Visual content is playing an increasingly important role in search. Google's improved image recognition capabilities and the rise of visual search platforms mean that optimizing images, videos, and other visual content is more important than ever. This includes proper alt text, descriptive filenames, and structured data.</p>
+                    </div>
+                    
+                    <h2 class="fw-bold mb-4">Adapting Your <span class="text-primary">SEO Strategy</span> for 2025</h2>
+                    <p class="mb-5">To succeed in 2025, businesses need to focus on creating valuable content that genuinely serves user needs, optimizing for voice and visual search, and ensuring their websites provide exceptional user experiences. The days of quick SEO fixes are over – sustainable success requires a comprehensive, user-centered approach.</p>
+                    
+                {% elif post_id == 2 %}
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="PPC Advertising" class="img-fluid rounded mb-5 w-100">
+                    
+                    <p class="lead mb-5">Pay-Per-Click (PPC) advertising continues to be one of the most effective ways to drive targeted traffic to your website and generate immediate results. In 2025, PPC strategies have evolved to become more data-driven and automated, allowing businesses to maximize their return on investment.</p>
+                    
+                    <h2 class="fw-bold mb-4">Key Strategies for <span class="text-primary">PPC Success</span> in 2025</h2>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">1. Advanced Audience Targeting</h3>
+                        <p>Modern PPC platforms offer sophisticated targeting options that go beyond basic demographics. In 2025, successful campaigns leverage behavioral data, purchase history, and predictive analytics to reach the most likely customers. This includes lookalike audiences, custom intent audiences, and dynamic remarketing.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">2. Automated Bidding Strategies</h3>
+                        <p>Machine learning algorithms now handle much of the bidding process, optimizing for conversions in real-time. Smart bidding strategies like Target CPA (Cost Per Acquisition) and Target ROAS (Return on Ad Spend) are becoming the norm, allowing advertisers to focus on strategy rather than manual bid adjustments.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">3. Cross-Platform Campaign Management</h3>
+                        <p>Consumers interact with brands across multiple channels, making cross-platform campaign management essential. Successful PPC strategies in 2025 integrate Google Ads, Microsoft Advertising, social media platforms, and emerging channels into cohesive campaigns that maintain consistent messaging while optimizing for each platform's unique characteristics.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">4. Enhanced Ad Formats</h3>
+                        <p>New ad formats like responsive search ads, dynamic search ads, and interactive ads are driving higher engagement rates. In 2025, successful advertisers are experimenting with video ads, carousel ads, and shoppable ads to capture attention and drive conversions.</p>
+                    </div>
+                    
+                    <h2 class="fw-bold mb-4">Maximizing <span class="text-primary">ROI</span> with Data-Driven Optimization</h2>
+                    <p class="mb-5">To maximize ROI in 2025, businesses must embrace a culture of continuous testing and optimization. This includes A/B testing ad copy, landing pages, and bidding strategies, while leveraging advanced analytics to understand which elements drive the best results. The most successful PPC campaigns are those that treat optimization as an ongoing process rather than a one-time setup.</p>
+                    
+                {% elif post_id == 3 %}
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Content Marketing" class="img-fluid rounded mb-5 w-100">
+                    
+                    <p class="lead mb-5">Content marketing has evolved from a simple blog posting strategy to a comprehensive approach that drives engagement, builds trust, and converts prospects into customers. In 2025, successful content marketing requires a strategic approach that aligns with business goals and audience needs.</p>
+                    
+                    <h2 class="fw-bold mb-4">Essential Elements of a <span class="text-primary">Content Marketing</span> Strategy</h2>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">1. Audience Research and Personas</h3>
+                        <p>Effective content marketing begins with a deep understanding of your target audience. In 2025, successful marketers create detailed buyer personas based on data analytics, surveys, and customer interviews. This includes understanding pain points, goals, content preferences, and the channels where your audience spends their time.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">2. Content Planning and Calendar</h3>
+                        <p>A well-structured content calendar ensures consistent publishing and strategic alignment with business objectives. Modern content calendars incorporate seasonal trends, product launches, industry events, and audience behavior patterns. They also account for repurposing content across different formats and channels.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">3. Diverse Content Formats</h3>
+                        <p>Today's audiences consume content in various formats, from traditional blog posts to videos, podcasts, infographics, and interactive content. Successful 2025 content strategies include a mix of formats that cater to different learning preferences and consumption habits while maintaining brand consistency.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">4. Distribution and Promotion</h3>
+                        <p>Creating great content is only half the battle – getting it in front of the right audience is equally important. Effective distribution strategies in 2025 include SEO optimization, social media promotion, email marketing, influencer partnerships, and paid promotion to amplify reach and engagement.</p>
+                    </div>
+                    
+                    <h2 class="fw-bold mb-4">Measuring <span class="text-primary">Content Marketing</span> Success</h2>
+                    <p class="mb-5">To demonstrate ROI and optimize performance, content marketing efforts must be measured against clear KPIs. In 2025, successful marketers track metrics like engagement rates, conversion rates, customer lifetime value, and brand sentiment. They also use attribution modeling to understand how content contributes to the overall customer journey and business outcomes.</p>
+                    
+                {% elif post_id == 4 %}
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Mobile-First Design" class="img-fluid rounded mb-5 w-100">
+                    
+                    <p class="lead mb-5">Mobile-first design has become the standard approach for web development, reflecting the reality that most users access websites via mobile devices. In 2025, this approach has evolved to prioritize not just mobile compatibility, but mobile excellence in user experience.</p>
+                    
+                    <h2 class="fw-bold mb-4">Principles of <span class="text-primary">Mobile-First</span> Design</h2>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">1. Content Hierarchy and Prioritization</h3>
+                        <p>Mobile-first design forces teams to prioritize content and features, focusing on what's most important to users. This approach leads to cleaner, more focused designs that eliminate unnecessary elements and emphasize core functionality. The result is faster loading times and improved user satisfaction across all devices.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">2. Touch-Friendly Navigation</h3>
+                        <p>Mobile devices require different navigation patterns than desktop computers. Successful mobile-first designs incorporate large touch targets, simplified menus, and gesture-based interactions. Hamburger menus, bottom navigation bars, and thumb-friendly layouts are standard practices in 2025.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">3. Performance Optimization</h3>
+                        <p>Mobile users often have limited bandwidth and processing power, making performance optimization critical. Mobile-first approaches include image optimization, lazy loading, minimal JavaScript, and progressive web app technologies. These techniques ensure fast loading times and smooth interactions even on slower connections.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h3 class="fw-bold text-primary mb-3">4. Responsive Typography and Layouts</h3>
+                        <p>Text readability and layout flexibility are essential for mobile experiences. Modern mobile-first designs use scalable typography systems, flexible grids, and adaptive layouts that work across screen sizes. This includes considerations for different orientations, accessibility requirements, and varying device capabilities.</p>
+                    </div>
+                    
+                    <h2 class="fw-bold mb-4">Impact on <span class="text-primary">SEO and User Experience</span></h2>
+                    <p class="mb-5">Mobile-first design directly impacts both search engine rankings and user experience metrics. Google's mobile-first indexing means that the mobile version of your site is the primary version Google uses for ranking. Additionally, mobile-friendly sites see lower bounce rates, higher engagement, and improved conversion rates. In 2025, mobile-first design is not just a best practice—it's a business necessity.</p>
+                    
+                {% else %}
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Blog Post" class="img-fluid rounded mb-5 w-100">
+                    
+                    <p class="lead mb-5">This is a sample blog post content. Replace this with your actual content.</p>
+                    
+                    <h2 class="fw-bold mb-4">Sample <span class="text-primary">Heading</span></h2>
+                    <p class="mb-5">This is sample content for a blog post. In a real implementation, this would be replaced with actual content specific to the post topic.</p>
+                {% endif %}
                 
-                <img src="https://via.placeholder.com/800x400" alt="SEO 2025" class="img-fluid rounded mb-4">
-                
-                <p>As we move further into 2025, the landscape of search engine optimization continues to evolve at a rapid pace. With Google's increasing focus on user experience and AI-powered algorithms, SEO professionals must adapt their strategies to stay ahead of the curve.</p>
-                
-                <h2>Key Trends Shaping SEO in 2025</h2>
-                
-                <h3>1. AI-Generated Content and Quality</h3>
-                <p>Google's algorithms have become increasingly sophisticated in detecting AI-generated content that lacks genuine value. In 2025, the focus is shifting toward content that demonstrates expertise, authoritativeness, and trustworthiness (E-A-T). Publishers who invest in high-quality, original content created by human experts are seeing better rankings.</p>
-                
-                <h3>2. Core Web Vitals and User Experience</h3>
-                <p>User experience signals continue to play a crucial role in search rankings. Core Web Vitals, which measure loading performance, interactivity, and visual stability, remain important factors. Websites that prioritize fast loading times, mobile responsiveness, and intuitive navigation are rewarded with higher positions in search results.</p>
-                
-                <h3>3. Voice Search Optimization</h3>
-                <p>With the proliferation of smart speakers and voice assistants, voice search optimization has become essential. In 2025, we're seeing a shift toward more conversational, long-tail keywords that mirror natural speech patterns. Structured data markup is also becoming increasingly important for voice search visibility.</p>
-                
-                <h3>4. Video and Visual Search</h3>
-                <p>Visual content is playing an increasingly important role in search. Google's improved image recognition capabilities and the rise of visual search platforms mean that optimizing images, videos, and other visual content is more important than ever. This includes proper alt text, descriptive filenames, and structured data.</p>
-                
-                <h2>Adapting Your SEO Strategy for 2025</h2>
-                <p>To succeed in 2025, businesses need to focus on creating valuable content that genuinely serves user needs, optimizing for voice and visual search, and ensuring their websites provide exceptional user experiences. The days of quick SEO fixes are over – sustainable success requires a comprehensive, user-centered approach.</p>
-                
-                <div class="mt-4">
-                    <h4>Share this post:</h4>
-                    <a href="#" class="btn btn-outline-primary">Facebook</a>
-                    <a href="#" class="btn btn-outline-info">Twitter</a>
-                    <a href="#" class="btn btn-outline-primary">LinkedIn</a>
+                <!-- Share Section -->
+                <div class="border-top pt-4 mt-5">
+                    <h4 class="fw-bold mb-4">Share this post:</h4>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                            <i class="fab fa-facebook-f me-2"></i>Facebook
+                        </a>
+                        <a href="#" class="btn btn-info rounded-pill px-4 py-2">
+                            <i class="fab fa-twitter me-2"></i>Twitter
+                        </a>
+                        <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                            <i class="fab fa-linkedin-in me-2"></i>LinkedIn
+                        </a>
+                    </div>
                 </div>
             </article>
             
-            <div class="mt-5">
-                <h3>Comments</h3>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">Great insights on the future of SEO! I'm particularly interested in how voice search is changing the game.</p>
-                        <p class="card-text"><small class="text-muted">January 16, 2025</small></p>
+            <!-- Comments Section -->
+            <div class="glass-card p-5 mt-5">
+                <h3 class="fw-bold mb-4">Comments</h3>
+                
+                <div class="d-flex mb-4">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="John Doe" class="rounded-circle me-3" width="60" height="60">
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fw-bold mb-1">John Doe</h5>
+                            <small class="text-muted">January 16, 2025</small>
+                        </div>
+                        <p class="mb-0">Great insights on the future of SEO! I'm particularly interested in how voice search is changing the game.</p>
                     </div>
                 </div>
                 
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Jane Smith</h5>
-                        <p class="card-text">Thanks for sharing these trends. It's clear that user experience will continue to be a major factor in SEO success.</p>
-                        <p class="card-text"><small class="text-muted">January 17, 2025</small></p>
+                <div class="d-flex mb-4">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Jane Smith" class="rounded-circle me-3" width="60" height="60">
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fw-bold mb-1">Jane Smith</h5>
+                            <small class="text-muted">January 17, 2025</small>
+                        </div>
+                        <p class="mb-0">Thanks for sharing these trends. It's clear that user experience will continue to be a major factor in SEO success.</p>
                     </div>
                 </div>
                 
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Leave a Comment</h5>
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name">
+                <div class="mt-5">
+                    <h4 class="fw-bold mb-4">Leave a Comment</h4>
+                    <form>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control rounded-pill" id="name" placeholder="Your Name">
+                                    <label for="name">Name</label>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control rounded-pill" id="email" placeholder="Your Email">
+                                    <label for="email">Email</label>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="comment" class="form-label">Comment</label>
-                                <textarea class="form-control" id="comment" rows="4"></textarea>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="comment" placeholder="Your Comment" style="height: 150px"></textarea>
+                                    <label for="comment">Comment</label>
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Post Comment</button>
-                        </form>
-                    </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary rounded-pill px-5 py-3 fw-bold">
+                                    <i class="fas fa-paper-plane me-2"></i>Post Comment
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
         
         <div class="col-lg-4">
-            <div class="card shadow-sm mb-4">
-                <div class="card-header">
-                    <h5>About the Author</h5>
+            <!-- About the Author -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-header bg-primary text-white py-4">
+                    <h5 class="mb-0 fw-bold">About the Author</h5>
                 </div>
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <img src="https://via.placeholder.com/60x60" alt="Author" class="rounded-circle me-3">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Admin User" class="rounded-circle me-3" width="80" height="80">
                         <div>
-                            <h6 class="mb-0">Admin User</h6>
+                            <h5 class="fw-bold mb-1">Admin User</h5>
                             <p class="mb-0 text-muted">SEO Specialist</p>
                         </div>
                     </div>
-                    <p class="mt-3">Digital marketing expert with over 10 years of experience in SEO and content strategy.</p>
+                    <p class="mb-0">Digital marketing expert with over 10 years of experience in SEO and content strategy.</p>
                 </div>
             </div>
             
-            <div class="card shadow-sm">
-                <div class="card-header">
-                    <h5>Related Posts</h5>
+            <!-- Related Posts -->
+            <div class="glass-card p-4">
+                <h5 class="fw-bold mb-4">Related Posts</h5>
+                <div class="d-flex mb-4">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="PPC Blog Post">
+                    <div class="ms-3">
+                        <h6 class="fw-bold mb-1">Maximizing ROI with PPC Advertising</h6>
+                        <small class="text-muted">January 10, 2025</small>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-decoration-none">Maximizing ROI with PPC Advertising</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none">Building a Successful Content Marketing Strategy</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none">Mobile-First Design: Why It Matters</a></li>
-                    </ul>
+                
+                <div class="d-flex mb-4">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="Content Marketing Blog Post">
+                    <div class="ms-3">
+                        <h6 class="fw-bold mb-1">Building a Successful Content Marketing Strategy</h6>
+                        <small class="text-muted">January 5, 2025</small>
+                    </div>
+                </div>
+                
+                <div class="d-flex">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;" alt="Web Design Blog Post">
+                    <div class="ms-3">
+                        <h6 class="fw-bold mb-1">Mobile-First Design: Why It Matters</h6>
+                        <small class="text-muted">December 28, 2024</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Stay Updated with Our Latest Insights</h2>
+                <p class="lead fs-5 mb-5">Subscribe to our newsletter for the latest digital marketing trends and tips.</p>
+                <div class="input-group mb-3 w-75 mx-auto">
+                    <input type="email" class="form-control form-control-lg rounded-start-pill" placeholder="Enter your email" aria-label="Email">
+                    <button class="btn btn-warning btn-lg rounded-end-pill px-4 fw-bold" type="button">Subscribe</button>
                 </div>
             </div>
         </div>

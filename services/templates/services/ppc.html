@@ -3,70 +3,264 @@
 {% block title %}PPC Advertising - Digital Marketing Company{% endblock %}
 
 {% block content %}
-<div class="container mt-5 mb-5">
+<!-- Page Header -->
+<div class="bg-primary bg-opacity-10 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">PPC <span class="text-primary">Advertising</span></h1>
+                <p class="lead fs-5">Drive targeted traffic to your website and generate leads with our expert PPC management services.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container my-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'home' %}" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'services' %}" class="text-decoration-none">Services</a></li>
             <li class="breadcrumb-item active" aria-current="page">PPC</li>
         </ol>
     </nav>
-    
-    <div class="row">
-        <div class="col-12">
-            <h1>PPC Advertising</h1>
-            <p class="lead">Drive targeted traffic to your website and generate leads with our expert PPC management services.</p>
-        </div>
-    </div>
-    
-    <div class="row mt-4">
+</div>
+
+<!-- PPC Content -->
+<div class="container my-7">
+    <div class="row g-5">
         <div class="col-lg-8">
-            <h2>What is PPC?</h2>
-            <p>Pay-Per-Click (PPC) advertising is a digital marketing model where advertisers pay a fee each time one of their ads is clicked. It's essentially a way of buying visits to your site, rather than attempting to earn those visits organically.</p>
-            
-            <h2 class="mt-4">Our PPC Services</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Google Ads</h4>
-                    <p>Create and manage effective Google Ads campaigns to reach customers searching for your products or services.</p>
-                    
-                    <h4>Facebook & Instagram Ads</h4>
-                    <p>Leverage the power of social media advertising to target specific demographics and interests.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>LinkedIn Ads</h4>
-                    <p>Reach professionals and decision-makers with targeted LinkedIn advertising campaigns.</p>
-                    
-                    <h4>Conversion Optimization</h4>
-                    <p>Optimize your campaigns to maximize conversions and improve return on investment.</p>
+            <!-- What is PPC -->
+            <div class="glass-card p-5 mb-5">
+                <h2 class="fw-bold mb-4">What is <span class="text-primary">PPC</span>?</h2>
+                <p class="lead">Pay-Per-Click (PPC) advertising is a digital marketing model where advertisers pay a fee each time one of their ads is clicked. It's essentially a way of buying visits to your site, rather than attempting to earn those visits organically.</p>
+                
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Targeted Traffic</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Immediate Results</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Budget Control</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Measurable ROI</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <h2 class="mt-4">Why Choose Our PPC Services?</h2>
-            <ul>
-                <li><strong>Expert Management:</strong> Our certified PPC specialists manage your campaigns for optimal performance</li>
-                <li><strong>Data-Driven Approach:</strong> We use analytics to make informed decisions and improve results</li>
-                <li><strong>Transparent Reporting:</strong> Get detailed reports on your campaign performance and ROI</li>
-                <li><strong>Continuous Optimization:</strong> We constantly refine your campaigns to improve performance</li>
-                <li><strong>Cost-Effective Solutions:</strong> Maximize your advertising budget with our efficient strategies</li>
-            </ul>
+            <!-- Our PPC Services -->
+            <div class="mb-5">
+                <h2 class="fw-bold mb-4">Our <span class="text-primary">PPC Services</span></h2>
+                
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Google Ads</h4>
+                                </div>
+                                <p class="mb-0">Create and manage effective Google Ads campaigns to reach customers searching for your products or services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-info bg-opacity-10 text-info rounded-circle me-3">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Facebook & Instagram Ads</h4>
+                                </div>
+                                <p class="mb-0">Leverage the power of social media advertising to target specific demographics and interests.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-success bg-opacity-10 text-success rounded-circle me-3">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">LinkedIn Ads</h4>
+                                </div>
+                                <p class="mb-0">Reach professionals and decision-makers with targeted LinkedIn advertising campaigns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-sm bg-warning bg-opacity-10 text-warning rounded-circle me-3">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <h4 class="fw-bold mb-0">Conversion Optimization</h4>
+                                </div>
+                                <p class="mb-0">Optimize your campaigns to maximize conversions and improve return on investment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Why Choose Us -->
+            <div class="glass-card p-5">
+                <h2 class="fw-bold mb-4">Why Choose Our <span class="text-primary">PPC Services</span>?</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Expert Management</h5>
+                                <p class="mb-0">Our certified PPC specialists manage your campaigns for optimal performance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Data-Driven Approach</h5>
+                                <p class="mb-0">We use analytics to make informed decisions and improve results.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Transparent Reporting</h5>
+                                <p class="mb-0">Get detailed reports on your campaign performance and ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Continuous Optimization</h5>
+                                <p class="mb-0">We constantly refine your campaigns to improve performance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Cost-Effective Solutions</h5>
+                                <p class="mb-0">Maximize your advertising budget with our efficient strategies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="icon-xs bg-success bg-opacity-10 text-success rounded-circle me-3 mt-1">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Dedicated Support</h5>
+                                <p class="mb-0">Receive personalized attention from our PPC experts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="col-lg-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h3 class="card-title">PPC Packages</h3>
+            <!-- PPC Packages -->
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-header bg-success text-white py-4">
+                    <h3 class="mb-0 fw-bold">PPC Packages</h3>
+                </div>
+                <div class="card-body p-4">
                     <p>Choose the perfect PPC package for your business:</p>
-                    <a href="{% url 'packages' %}" class="btn btn-primary w-100">View Packages</a>
+                    <a href="{% url 'packages' %}" class="btn btn-success w-100 py-3 fw-bold">
+                        <i class="fas fa-box-open me-2"></i>View Packages
+                    </a>
                 </div>
             </div>
             
-            <div class="card shadow-sm mt-4">
-                <div class="card-body">
-                    <h3 class="card-title">Contact Us</h3>
-                    <p>Ready to launch your PPC campaigns? Get in touch with our advertising experts today.</p>
-                    <a href="{% url 'contact' %}" class="btn btn-success w-100">Get Started</a>
+            <!-- Contact Us -->
+            <div class="glass-card p-4 mb-5">
+                <h3 class="fw-bold mb-3">Contact <span class="text-primary">Us</span></h3>
+                <p>Ready to launch your PPC campaigns? Get in touch with our advertising experts today.</p>
+                <a href="{% url 'contact' %}" class="btn btn-success w-100 py-3 fw-bold">
+                    <i class="fas fa-calendar-check me-2"></i>Get Started
+                </a>
+            </div>
+            
+            <!-- PPC Stats -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold mb-4">PPC Performance</h4>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-primary">5x</div>
+                            <p class="mb-0">Higher click-through rates</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="text-center">
+                            <div class="display-6 fw-bold text-success">30%</div>
+                            <p class="mb-0">Lower cost per acquisition</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="py-7 bg-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-index-1">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="display-5 fw-bold mb-4">Ready to Dominate Paid Search?</h2>
+                <p class="lead fs-5 mb-5">Let's discuss how our PPC services can boost your online visibility and drive conversions.</p>
+                <a href="{% url 'contact' %}" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                    <i class="fas fa-rocket me-2"></i>Schedule a Consultation
+                </a>
             </div>
         </div>
     </div>

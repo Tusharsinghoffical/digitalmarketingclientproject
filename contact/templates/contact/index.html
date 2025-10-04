@@ -22,56 +22,56 @@
         <div class="col-lg-7">
             <div class="glass-card p-5">
                 <h2 class="fw-bold mb-4">Send us a <span class="text-primary">message</span></h2>
-                <form>
+                <form action="https://formspree.io/f/xldplrjy" method="POST">
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control rounded-pill" id="name" placeholder="Your Name" required>
+                                <input type="text" class="form-control rounded-pill" id="name" name="name" placeholder="Your Name" required>
                                 <label for="name">Name</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control rounded-pill" id="email" placeholder="Your Email" required>
+                                <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="Your Email" required>
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="tel" class="form-control rounded-pill" id="phone" placeholder="Your Phone">
+                                <input type="tel" class="form-control rounded-pill" id="phone" name="phone" placeholder="Your Phone">
                                 <label for="phone">Phone</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control rounded-pill" id="subject" placeholder="Subject">
+                                <input type="text" class="form-control rounded-pill" id="subject" name="_subject" placeholder="Subject">
                                 <label for="subject">Subject</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <select class="form-select rounded-pill" id="service">
+                                <select class="form-select rounded-pill" id="service" name="service">
                                     <option selected>Choose a service</option>
-                                    <option>SEO Services</option>
-                                    <option>PPC Advertising</option>
-                                    <option>Website Development</option>
-                                    <option>App Development</option>
-                                    <option>Video Marketing</option>
-                                    <option>Social Media Marketing</option>
-                                    <option>Other</option>
+                                    <option value="SEO Services">SEO Services</option>
+                                    <option value="PPC Advertising">PPC Advertising</option>
+                                    <option value="Website Development">Website Development</option>
+                                    <option value="App Development">App Development</option>
+                                    <option value="Video Marketing">Video Marketing</option>
+                                    <option value="Social Media Marketing">Social Media Marketing</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 <label for="service">Service Interested In</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
                                 <label for="message">Message</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
                                 <label class="form-check-label" for="newsletter">
                                     Subscribe to our newsletter
                                 </label>
@@ -111,7 +111,7 @@
                     </div>
                     <div>
                         <h5 class="fw-bold mb-1">Phone Number</h5>
-                        <p class="mb-0"><a href="tel:+1234567890" class="text-decoration-none">(123) 456-7890</a></p>
+                        <p class="mb-0"><a href="tel:+918851619647" class="text-decoration-none">8851619647</a></p>
                     </div>
                 </div>
                 
@@ -202,7 +202,7 @@
             <div class="col-lg-8 mx-auto text-center text-white">
                 <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Business?</h2>
                 <p class="lead fs-5 mb-5">Let's discuss how our services can help achieve your business goals.</p>
-                <a href="tel:+1234567890" class="btn btn-light btn-lg px-5 py-3 fw-bold me-3">
+                <a href="tel:+918851619647" class="btn btn-light btn-lg px-5 py-3 fw-bold me-3">
                     <i class="fas fa-phone me-2"></i>Call Us Now
                 </a>
                 <a href="mailto:info@digitalmarketing.com" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
@@ -212,4 +212,41 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xldplrjy",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
 {% endblock %}
